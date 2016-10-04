@@ -1,4 +1,4 @@
-package com.github.dannil;
+package com.github.dannil.quarkgluonsoup;
 
 import java.io.File;
 
