@@ -32,13 +32,12 @@ public class QuarkGluonSoup {
 		String output = "";
 		for (int i = 0; i < length; i++) {
 			// System.out.println(output);
-			int pos = r.nextInt(tempWords.size());
+			int position = r.nextInt(tempWords.size());
 
-			output += tempWords.get(pos);
-			if (i < length - 1) {
-				output += " ";
-			}
-			tempWords.remove(pos);
+			output += tempWords.get(position);
+			output += " ";
+
+			tempWords.remove(position);
 		}
 
 		// Lowercase words
@@ -49,7 +48,7 @@ public class QuarkGluonSoup {
 		// }
 		// }
 
-		return new String(chars);
+		return new String(chars).trim();
 	}
 
 }
