@@ -1,5 +1,6 @@
 package com.github.dannil.quarkgluonsoup;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -20,7 +21,10 @@ public class QuarkGluonSoup {
 	public QuarkGluonSoup(File file) throws IOException {
 		this();
 
-		this.words = Files.readAllLines(Paths.get(file.toURI()), StandardCharsets.UTF_8);
+		BufferedReader reader = Files.newBufferedReader(Paths.get(file.toURI()), StandardCharsets.UTF_8);
+		for (String line = reader.readLine(); line != null; line = reader.readLine()) {
+			this.words.add(line);
+		}
 	}
 
 	public String generatePseudoScientificMess(int length) {
