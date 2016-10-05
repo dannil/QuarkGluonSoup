@@ -10,8 +10,7 @@ branches:
   - dev
 sudo: required
 after_success:
-- mvn com.gavinmogan:codacy-maven-plugin:coverage -DcoverageReportFile=target/site/jacoco/jacoco.xml
-  -DprojectToken=$CODACY_PROJECT_TOKEN -DapiToken=$CODACY_API_TOKEN -DcodacyApiBaseUrl=https://api.codacy.com
+- mvn com.gavinmogan:codacy-maven-plugin:coverage -DcoverageReportFile=target/site/jacoco/jacoco.xml -DprojectToken=$CODACY_PROJECT_TOKEN -DapiToken=$CODACY_API_TOKEN -DcodacyApiBaseUrl=https://api.codacy.com
 env:
   global:
   - secure: "E1EX1ML4f34IFqUf1EcONTCiv98QMFkvm5dMGDoAIQ1PPcTcvVetP0kOFFBzrrsGHYIgGQXElyR172nNl3akRiIEABSUhaR9zctEFG2Bt/6ETLevJoyNFhK8AjkzufkFJQrIO6LbTSfTIbsWwI8HOp5TJXxvzo6SBXkW7vkfnA80w9AMF8nqmNxr359nbGsI9lxNDBYpW4ZLWCeoKZFnfTLs4jrjZFHek2NQ1LjLP43BoeB4J9KPd2bCXmbZL5n8P7jIfaL7H7CJbG8CBPOKY88TDDW65r+l47w7wJxTh59hIYqEoAT1m/z33aJ2CFGYawpN9B+XwsSAJgIyYgJ2r6bsO5hxL3tf5YMcB+otDe3TQ1bXOeTw+QOJ48p6pTBeDsVvgjBAQIuVBv7HbMSggN/85ylB4Q+XDzrixnd69H1VN+udLql6hvNYFAvjIY0hd2ZWuppuIlxkiHf7dYoMiQkJcHrgFluH+soQfK1idEzvU7Lf0KkoGvPbVA3NRvY4obvgZYLI8LIGBBcObGgphqGNpIJwt/tCz2UQhVUd8DdpiRrZCKKH7+PvNGD3vV9ynw4hceKmDOz9tug0ELBjc280LoJpEhB1GQ15D23vJQPxGBpNXK6/mj7yJRMly8lSJcn5WipIqfdJGIodvs11kPsvcegzsid7iignuhUDrhQ="
