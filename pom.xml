@@ -27,13 +27,14 @@
 		<license>
 			<name>MIT License</name>
 			<url>https://opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
 		</license>
 	</licenses>
 
 	<scm>
-		<connection>scm:git:git@github.com:dannil/QuarkGluonSoup.git</connection>
+		<url>https://github.com/dannil/QuarkGluonSoup</url>
+		<connection>scm:git:git://github.com/dannil/QuarkGluonSoup.git</connection>
 		<developerConnection>scm:git:git@github.com:dannil/QuarkGluonSoup.git</developerConnection>
-		<url>git@github.com:dannil/QuarkGluonSoup.git</url>
 		<tag>HEAD</tag>
 	</scm>
 	<issueManagement>
