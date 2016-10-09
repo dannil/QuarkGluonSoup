@@ -23,6 +23,10 @@
 		</developer>
 	</developers>
 
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
 	<licenses>
 		<license>
 			<name>MIT License</name>
